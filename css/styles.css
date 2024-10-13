@@ -50,6 +50,11 @@ body {
   max-width: 22.3125rem;
   width: 100%;
   padding: 1.5rem;
+  transition: transform 0.2s;
+}
+
+.review:hover {
+  transform: scale(1.025);
 }
 
 .review__gfx,
