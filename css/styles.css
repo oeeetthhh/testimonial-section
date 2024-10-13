@@ -1,3 +1,14 @@
+/* global variables */
+:root {
+  --body-bg: #fafaf9;
+  --txt-dark: #18181b;
+  --txt-light: #52525a;
+  --fnt-1: 2.25rem;
+  --fnt-2: 1.25rem;
+  --fnt-3: 1rem;
+  --fnt-4: 0.875rem;
+}
+
 /* local font hosting */
 @font-face {
   font-display: swap;
