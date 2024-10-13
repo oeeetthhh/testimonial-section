@@ -8,5 +8,82 @@
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body></body>
+  <body>
+    <section class="testimonials">
+      <div class="testimonials__left">
+        <div class="testimonials__icon">
+          <span class="testimonials__icon-emoji">⭐</span>
+        </div>
+        <h1 class="testimonials__title">Reviewers</h1>
+        <p class="testimonials__description">
+          Reviewers is where people can access guidelines, checklists, and other
+          tools to assist them in reviewing papers or manuscripts. It provides a
+          structured approach to ensure that the review process is thorough,
+          efficient, and consistent.
+        </p>
+        <ul class="testimonials__list">
+          <!--
+            the li text is wrapped with a span in order to achieve
+            a hacky way to get the text to line up with the green tick
+            svgs that are used as the bullet points for the list
+          -->
+          <li class="testimonials__list-item">
+            <span>Checklist to Review an Academic Paper</span>
+          </li>
+          <li class="testimonials__list-item">
+            <span>Peer Review Checklist</span>
+          </li>
+          <li class="testimonials__list-item">
+            <span
+              >Checklist for Editors, Reviewers, and Authors of SPIE
+              Journals</span
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="testimonials__right">
+        <article class="review">
+          <div class="review__gfx">
+            <img
+              src="./images/google.png"
+              alt="Reviewing company's logo"
+              class="review__logo"
+            />
+            <div class="review__stars">
+              <img src="./images/star-yellow.svg" alt="" />
+              <img src="./images/star-yellow.svg" alt="" />
+              <img src="./images/star-yellow.svg" alt="" />
+              <img src="./images/star-yellow.svg" alt="" />
+              <img src="./images/star-grey.svg" alt="" />
+            </div>
+          </div>
+          <p class="review__author">Samantha Lee</p>
+          <p class="review__body">
+            The checklist ensures that the review process is thorough
+          </p>
+        </article>
+
+        <article class="review">
+          <div class="review__gfx">
+            <img
+              src="./images/meta.png"
+              alt="Reviewing company's logo"
+              class="review__logo"
+            />
+            <div class="review__stars">
+              <img src="./images/star-yellow.svg" alt="" />
+              <img src="./images/star-yellow.svg" alt="" />
+              <img src="./images/star-yellow.svg" alt="" />
+              <img src="./images/star-yellow.svg" alt="" />
+              <img src="./images/star-yellow.svg" alt="" />
+            </div>
+          </div>
+          <p class="review__author">Rachel Patel</p>
+          <p class="review__body">
+            I highly recommend the Writecream Business Description
+          </p>
+        </article>
+      </div>
+    </section>
+  </body>
 </html>

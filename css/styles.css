@@ -35,6 +35,10 @@ html {
 /* general styling */
 body {
   background: var(--body-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100dvh;
   padding: 1rem;
 }
 
@@ -88,5 +92,103 @@ body {
 
   .review__body {
     font-size: var(--fnt-3);
+  }
+}
+
+/* testimonials section */
+.testimonials {
+  width: 100%;
+  max-width: 71rem;
+}
+
+.testimonials__icon {
+  background: #f5c044;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.875rem;
+  width: 2.875rem;
+  margin-bottom: 1rem;
+}
+
+.testimonials__icon-emoji {
+  font-size: 1.5rem;
+}
+
+.testimonials__title {
+  color: var(--txt-dark);
+  font-size: var(--fnt-1);
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.testimonials__description {
+  color: var(--txt-light);
+  font-size: var(--fnt-2);
+  line-height: 1.75;
+  margin-bottom: 2rem;
+}
+
+.testimonials__list {
+  color: var(--txt-light);
+  font-size: var(--fnt-4);
+  list-style-image: url(../images/green-tick.svg);
+  padding-left: 1.5rem;
+}
+
+.testimonials__list-item {
+  line-height: 1.4;
+  margin-bottom: 0.75rem;
+}
+
+.testimonials__list-item > span {
+  position: relative;
+  top: -7px;
+}
+
+.testimonials__right {
+  display: flex;
+  flex-direction: column;
+  max-width: 34.5rem;
+  margin: 4rem auto 0;
+}
+
+.testimonials__right .review:nth-child(odd) {
+  align-self: flex-end;
+}
+
+.testimonials__right .review {
+  margin-bottom: 2.5rem;
+}
+
+.testimonials__right .review:last-of-type {
+  margin: 0;
+}
+
+@media screen and (min-width: 53.125em) {
+  body {
+    padding: 2rem;
+  }
+
+  .testimonials {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .testimonials__left {
+    width: 50%;
+  }
+
+  .testimonials__right {
+    margin-top: 0;
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 73em) {
+  body {
+    padding: 2rem 0;
   }
 }
