@@ -31,3 +31,60 @@
 html {
   font-family: 'Sora', system-ui;
 }
+
+/* review component */
+.review {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0px 30px 100px 0px rgba(17, 23, 41, 0.05);
+  max-width: 22.3125rem;
+  width: 100%;
+  padding: 1.5rem;
+}
+
+.review__gfx,
+.review__stars {
+  display: flex;
+  align-items: center;
+}
+
+.review__gfx {
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.review__logo {
+  max-width: 5.4375rem;
+  width: 100%;
+}
+
+.review__stars {
+  gap: 4px;
+}
+
+.review__author,
+.review__body {
+  font-size: 1rem;
+}
+
+.review__author {
+  color: var(--txt-dark);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.review__body {
+  color: var(--txt-light);
+  font-size: 0.9375rem;
+  line-height: 1.75;
+}
+
+@media screen and (min-width: 22.5em) {
+  .review {
+    padding: 1.75rem 2.5rem;
+  }
+
+  .review__body {
+    font-size: var(--fnt-3);
+  }
+}
