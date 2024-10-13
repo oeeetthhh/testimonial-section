@@ -32,6 +32,12 @@ html {
   font-family: 'Sora', system-ui;
 }
 
+/* general styling */
+body {
+  background: var(--body-bg);
+  padding: 1rem;
+}
+
 /* review component */
 .review {
   background: #fff;
@@ -62,13 +68,9 @@ html {
   gap: 4px;
 }
 
-.review__author,
-.review__body {
-  font-size: 1rem;
-}
-
 .review__author {
   color: var(--txt-dark);
+  font-size: 1rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
 }
